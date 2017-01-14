@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">CheckCar</string>
+    <string name="toptitletext">监控设备检测</string>
+    <string name="devicenotext">请输入设备号/VIN号</string>
+    <string name="seachtext">立即查询</string>
+    <string name="timetext">数据更新时间：</string>
+    <string name="timevaltext">yyyy/MM/dd HH:mm:ss</string>
+    <string name="gpstext">GPS指示灯</string>
+    <string name="nettext">网络通讯灯</string>
+    <string name="soctext">SOC</string>
+    <string name="voltext">总电压</string>
+    <string name="eletext">总电流</string>
+    <string name="maxtemtext">最高温度</string>
+    <string name="mintemtext">最低温度</string>
+    <string name="maxonevoltext">最高单体电压</string>
+    <string name="minonevoltext">最低单体电压</string>
+    <string name="controltemtext">控制器温度</string>
+    <string name="chargestatutext">充电状态</string>
+    <string name="chargelinktext">充电连接状态</string>
+    <string name="runmetertext">行驶里程</string>
+    <string name="faultcodetext">故障码</string>
+    <string name="failtext">——</string>
+    <string name="faulttext">0000</string>
+
+    <!--条码扫描-->
+    <string name="scan_barcode_title">条形码扫描</string>
+    <string name="scan_qrcode_title">二维码扫描</string>
+    <string name="scan_allcode_title">二维码或条形码扫描</string>
+    <string name="scan_barcode_hint">将条形码对入取景框，即可自动扫描</string>
+    <string name="scan_qrcode_hint">将二维码对入取景框，即可自动扫描</string>
+    <string name="scan_allcode_hint">将二维码或条形码对入取景框，即可自动扫描</string>
+
+</resources>

@@ -1,0 +1,43 @@
+package yt.com.checkcar;
+import android.app.Activity;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.support.v7.app.AlertDialog;
+
+/**
+ * 功能：网络是否连接判断
+ */
+public class NetOpen {
+	 public static boolean isNetworkAvailable(Context mContext)
+	    {
+	        //  获取手机所有连接管理对象（包括对wi-fi,net等连接的管理）
+	        ConnectivityManager connectivityManager = (ConnectivityManager) mContext.getSystemService(Context.CONNECTIVITY_SERVICE);
+	        
+	        if (connectivityManager == null)
+	        {
+	            return false;
+	        }
+	        else
+	        {
+	            //获取NetworkInfo对象
+	            NetworkInfo[] networkInfo = connectivityManager.getAllNetworkInfo();
+	            
+	            if (networkInfo != null && networkInfo.length > 0)
+	            {
+	                for (int i = 0; i < networkInfo.length; i++)
+	                {
+						// 判断当前网络状态是否为连接状态
+	                    if (networkInfo[i].getState() == NetworkInfo.State.CONNECTED)
+	                    {
+	                        return true;
+	                    }
+	                }
+	            }
+	        }
+	        return false;
+	    }
+}
